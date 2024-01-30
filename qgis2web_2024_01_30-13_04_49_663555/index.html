@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+<style>
+.search-layer {
+  top: 65px;
+  left: .5em;
+}
+.ol-touch .search-layer {
+  top: 80px;
+}
+</style>
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control button {
+            background-color: #f8f8f8 !important;
+            color: #000000 !important;
+            border-radius: 0px !important;
+        }
+        .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 3px !important;
+        }
+        .ol-scale-line {
+            background: none !important;
+        }
+        .ol-scale-line-inner {
+            border: 2px solid #f8f8f8 !important;
+            border-top: none !important;
+            background: rgba(255, 255, 255, 0.5) !important;
+            color: black !important;
+        }
+        </style>
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/label_940950mlabel_94_2.js"></script><script src="layers/label_950960mlabel_95_3.js"></script><script src="layers/label_960970mlabel_96_4.js"></script><script src="layers/label_970980mlabel_97_5.js"></script><script src="layers/label_980990mlabel_98_6.js"></script><script src="layers/label_9901000mlabel_99_7.js"></script><script src="layers/label_10001010mlabel_100_8.js"></script><script src="layers/label_10101020mlabel_101_9.js"></script><script src="layers/label_10201030mlabel_102_10.js"></script><script src="layers/label_10301040mlabel_103_11.js"></script><script src="layers/label_10401050mlabel_104_12.js"></script><script src="layers/label_10501060mlabel_105_13.js"></script><script src="layers/label_10601070mlabel_106_14.js"></script><script src="layers/label_10701080mlabel_107_15.js"></script><script src="layers/label_10801090mlabel_108_16.js"></script><script src="layers/label_10901100mlabel_109_17.js"></script><script src="layers/label_11001110mlabel_110_18.js"></script><script src="layers/label_11101120mlabel_111_19.js"></script><script src="layers/label_11201130mlabel_112_20.js"></script><script src="layers/label_11301140mlabel_113_21.js"></script><script src="layers/label_11401150mlabel_114_22.js"></script><script src="layers/label_11501160mlabel_115_23.js"></script><script src="layers/label_11601170mlabel_116_24.js"></script><script src="layers/label_11701180mlabel_117_25.js"></script><script src="layers/label_11801190mlabel_118_26.js"></script><script src="layers/label_11901200mlabel_119_27.js"></script><script src="layers/label_12001210mlabel_120_28.js"></script><script src="layers/label_12101220mlabel_121_29.js"></script><script src="layers/label_12201230mlabel_122_30.js"></script><script src="layers/label_12301240mlabel_123_31.js"></script><script src="layers/DrillingPlanPriorityUnspecified_32.js"></script><script src="layers/DrillingPlanPriority5_33.js"></script><script src="layers/DrillingPlanPriority4_34.js"></script><script src="layers/DrillingPlanPriority3_35.js"></script><script src="layers/DrillingPlanPriority2_36.js"></script><script src="layers/DrillingPlanPriority1_37.js"></script><script src="layers/DisturbanceOutline_38.js"></script><script src="layers/HistoricDrillholes_39.js"></script>
+        <script src="styles/label_940950mlabel_94_2_style.js"></script><script src="styles/label_950960mlabel_95_3_style.js"></script><script src="styles/label_960970mlabel_96_4_style.js"></script><script src="styles/label_970980mlabel_97_5_style.js"></script><script src="styles/label_980990mlabel_98_6_style.js"></script><script src="styles/label_9901000mlabel_99_7_style.js"></script><script src="styles/label_10001010mlabel_100_8_style.js"></script><script src="styles/label_10101020mlabel_101_9_style.js"></script><script src="styles/label_10201030mlabel_102_10_style.js"></script><script src="styles/label_10301040mlabel_103_11_style.js"></script><script src="styles/label_10401050mlabel_104_12_style.js"></script><script src="styles/label_10501060mlabel_105_13_style.js"></script><script src="styles/label_10601070mlabel_106_14_style.js"></script><script src="styles/label_10701080mlabel_107_15_style.js"></script><script src="styles/label_10801090mlabel_108_16_style.js"></script><script src="styles/label_10901100mlabel_109_17_style.js"></script><script src="styles/label_11001110mlabel_110_18_style.js"></script><script src="styles/label_11101120mlabel_111_19_style.js"></script><script src="styles/label_11201130mlabel_112_20_style.js"></script><script src="styles/label_11301140mlabel_113_21_style.js"></script><script src="styles/label_11401150mlabel_114_22_style.js"></script><script src="styles/label_11501160mlabel_115_23_style.js"></script><script src="styles/label_11601170mlabel_116_24_style.js"></script><script src="styles/label_11701180mlabel_117_25_style.js"></script><script src="styles/label_11801190mlabel_118_26_style.js"></script><script src="styles/label_11901200mlabel_119_27_style.js"></script><script src="styles/label_12001210mlabel_120_28_style.js"></script><script src="styles/label_12101220mlabel_121_29_style.js"></script><script src="styles/label_12201230mlabel_122_30_style.js"></script><script src="styles/label_12301240mlabel_123_31_style.js"></script><script src="styles/DrillingPlanPriorityUnspecified_32_style.js"></script><script src="styles/DrillingPlanPriority5_33_style.js"></script><script src="styles/DrillingPlanPriority4_34_style.js"></script><script src="styles/DrillingPlanPriority3_35_style.js"></script><script src="styles/DrillingPlanPriority2_36_style.js"></script><script src="styles/DrillingPlanPriority1_37_style.js"></script><script src="styles/DisturbanceOutline_38_style.js"></script><script src="styles/HistoricDrillholes_39_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
