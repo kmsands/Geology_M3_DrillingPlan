@@ -39,7 +39,7 @@ var lyr_GradeControlClearanceLines_2 = new ol.layer.Vector({
                 source:jsonSource_GradeControlClearanceLines_2, 
                 style: style_GradeControlClearanceLines_2,
                 popuplayertitle: "Grade Control Clearance Lines",
-                interactive: false,
+                interactive: true,
                     title: '<img src="styles/legend/GradeControlClearanceLines_2.png" /> Grade Control Clearance Lines'
                 });
 var format_DisturbanceOutline_3 = new ol.format.GeoJSON();
@@ -54,7 +54,7 @@ var lyr_DisturbanceOutline_3 = new ol.layer.Vector({
                 source:jsonSource_DisturbanceOutline_3, 
                 style: style_DisturbanceOutline_3,
                 popuplayertitle: "Disturbance Outline",
-                interactive: false,
+                interactive: true,
                     title: '<img src="styles/legend/DisturbanceOutline_3.png" /> Disturbance Outline'
                 });
 var format_DrillingPlan_4 = new ol.format.GeoJSON();
@@ -90,7 +90,7 @@ var lyr_MiningExclusionArea_5 = new ol.layer.Vector({
                 source:jsonSource_MiningExclusionArea_5, 
                 style: style_MiningExclusionArea_5,
                 popuplayertitle: "Mining Exclusion Area",
-                interactive: false,
+                interactive: true,
                     title: '<img src="styles/legend/MiningExclusionArea_5.png" /> Mining Exclusion Area'
                 });
 var format_HeritageExlcusionZone_6 = new ol.format.GeoJSON();
@@ -105,7 +105,7 @@ var lyr_HeritageExlcusionZone_6 = new ol.layer.Vector({
                 source:jsonSource_HeritageExlcusionZone_6, 
                 style: style_HeritageExlcusionZone_6,
                 popuplayertitle: "Heritage Exlcusion Zone",
-                interactive: false,
+                interactive: true,
                     title: '<img src="styles/legend/HeritageExlcusionZone_6.png" /> Heritage Exlcusion Zone'
                 });
 
@@ -123,7 +123,7 @@ lyr_MiningExclusionArea_5.set('fieldImages', {'id': 'TextEdit', });
 lyr_HeritageExlcusionZone_6.set('fieldImages', {'id': 'TextEdit', 'name': 'TextEdit', });
 lyr_GradeControlClearanceLines_2.set('fieldLabels', {'id': 'no label', 'fid': 'no label', 'purpose': 'no label', });
 lyr_DisturbanceOutline_3.set('fieldLabels', {'id': 'no label', 'fid': 'no label', 'name': 'no label', 'area (ha)': 'no label', });
-lyr_DrillingPlan_4.set('fieldLabels', {'id': 'hidden field', 'fid': 'hidden field', 'y': 'hidden field', 'x': 'hidden field', 'z': 'hidden field', 'hole_id': 'inline label - always visible', 'completed': 'hidden field', 'date_drill': 'inline label - always visible', 'reporting_': 'hidden field', 'depth': 'no label', });
+lyr_DrillingPlan_4.set('fieldLabels', {'id': 'hidden field', 'fid': 'hidden field', 'y': 'hidden field', 'x': 'hidden field', 'z': 'hidden field', 'hole_id': 'inline label - always visible', 'completed': 'hidden field', 'date_drill': 'inline label - always visible', 'reporting_': 'hidden field', 'depth': 'inline label - always visible', });
 lyr_MiningExclusionArea_5.set('fieldLabels', {'id': 'no label', });
 lyr_HeritageExlcusionZone_6.set('fieldLabels', {'id': 'hidden field', 'name': 'no label', });
 lyr_HeritageExlcusionZone_6.on('precompose', function(evt) {
