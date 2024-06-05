@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:7851").setExtent([494310.241719, 8072705.261559, 496981.134489, 8074339.749619]);
+//ol.proj.get("EPSG:7851").setExtent([494134.093883, 8072514.776109, 496804.986652, 8074149.264169]);
 var wms_layers = [];
 
 
@@ -39,7 +39,7 @@ var lyr_GradeControlClearanceLines_2 = new ol.layer.Vector({
                 source:jsonSource_GradeControlClearanceLines_2, 
                 style: style_GradeControlClearanceLines_2,
                 popuplayertitle: "Grade Control Clearance Lines",
-                interactive: true,
+                interactive: false,
                     title: '<img src="styles/legend/GradeControlClearanceLines_2.png" /> Grade Control Clearance Lines'
                 });
 var format_DisturbanceOutline_3 = new ol.format.GeoJSON();
@@ -54,7 +54,7 @@ var lyr_DisturbanceOutline_3 = new ol.layer.Vector({
                 source:jsonSource_DisturbanceOutline_3, 
                 style: style_DisturbanceOutline_3,
                 popuplayertitle: "Disturbance Outline",
-                interactive: true,
+                interactive: false,
                     title: '<img src="styles/legend/DisturbanceOutline_3.png" /> Disturbance Outline'
                 });
 var format_DrillingPlan_4 = new ol.format.GeoJSON();
