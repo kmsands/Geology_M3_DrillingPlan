@@ -81,10 +81,7 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
-            code: 'EPSG:7851',
-            //extent: [-20037508.342789, -20037508.342789, 20037508.342789, 20037508.342789],
-            units: 'm'})
+         maxZoom: 28, minZoom: 1
     })
 });
 
@@ -93,7 +90,7 @@ map.addControl(layerSwitcher);
 
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([494718.351676, 8073289.007295, 496105.003827, 8074106.251325], map.getSize());
+map.getView().fit([13686685.086343, -1970730.029152, 13688423.235969, -1969867.749715], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
